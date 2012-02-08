@@ -132,6 +132,11 @@ public class CollectionPermutationIter<E>
 
     private List<E> applyPermutation()
     {
+    	//TESTFUL:ADDED CODE TO CHECK IF sourceArray is null
+    	if(sourceArray == null){
+    		return new ArrayList<E>();
+    	}
+    	
         ArrayList<E> output = new ArrayList<E>(sourceArray);
 
         // Example : this.sourceArray = ["A","B","C","D"]
@@ -171,13 +176,22 @@ public class CollectionPermutationIter<E>
     {
         StringBuffer sb = new StringBuffer();
         sb.append("Permutation int[]=");
-        sb.append(Arrays.toString(getCurrentPermutationArray()));
+        
+       //TESTFUL:ADDED CODE TO CHECK IF currentPermutationArray is not null
+        int[] currentPermutationArray = getCurrentPermutationArray();
+        if(currentPermutationArray != null){
+        	sb.append(Arrays.toString(currentPermutationArray));	
+        }
 
         List<E> permutationResult = applyPermutation();
         sb.append("\nPermutationSet Source Object[]=");
-        sb.append(this.sourceArray.toString());
-        sb.append("\nPermutationSet Result Object[]=");
-        sb.append(permutationResult.toString());
+     
+        //TESTFUL:ADDED CODE TO CHECK IF sourceArray is not null
+        if(this.sourceArray != null){
+            sb.append(this.sourceArray.toString());
+            sb.append("\nPermutationSet Result Object[]=");
+            sb.append(permutationResult.toString());        	
+        }
         return sb.toString();
     }
 

@@ -71,6 +71,9 @@ public class BronKerboschCliqueFinder<V, E extends org.jgrapht.graph.DefaultEdge
      */
     public BronKerboschCliqueFinder(Graph<V, E> graph)
     {
+    	if(graph == null){
+    		throw new NullPointerException("graph cannot be null");
+    	}
         this.graph = graph;
     }
 

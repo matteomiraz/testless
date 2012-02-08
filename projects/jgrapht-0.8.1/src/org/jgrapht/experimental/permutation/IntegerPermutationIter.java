@@ -103,7 +103,7 @@ public class IntegerPermutationIter
      * matter)
      */
     public IntegerPermutationIter(intArray array) {
-    	this(array.toArray());
+    	this(array==null?null:array.toArray());
     }
     public IntegerPermutationIter(int [] array)
     {
@@ -254,15 +254,19 @@ public class IntegerPermutationIter
             internalArray = this.Value;
         } else {
             // if hasNext() has precaclulated it , take this value.
-            if (this.wasNextValueCalculatedAlready) {
-                internalArray = this.Value;
-                this.wasNextValueCalculatedAlready = false;
-            } else {
-                internalArray = getNextStartingWith2();
-                if (this.endWasReached) {
-                    return null;
-                }
-            }
+        	
+        	//TESTFUL:COMMENTED UNNECESSARY CODE AND INCLUDED THE FOLLOWING TWO LINES
+        	internalArray = this.Value;
+            this.wasNextValueCalculatedAlready = false;
+//            if (this.wasNextValueCalculatedAlready) {
+//            	internalArray = this.Value;
+//                this.wasNextValueCalculatedAlready = false;
+//            } else {
+//                internalArray = getNextStartingWith2();
+//                if (this.endWasReached) {
+//                    return null;
+//                }
+//            }
         }
         this.currentValueBackup = arrayClone(internalArray);
         return arrayClone(internalArray);
@@ -284,7 +288,7 @@ public class IntegerPermutationIter
      * @param array
      */
     public String testful_toString(intArray array) {
-    	return toString(array.toArray());
+    	return toString(array==null?null:array.toArray());
     }
     public String toString(int [] array)
     {

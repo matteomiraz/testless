@@ -67,6 +67,9 @@ public class BiconnectivityInspector<V, E extends org.jgrapht.graph.DefaultEdge>
     public BiconnectivityInspector(UndirectedGraph<V, E> graph)
     {
         super();
+        if(graph == null){
+        	throw new RuntimeException("graph cannot be null");
+        }
         this.blockCutpointGraph = new BlockCutpointGraph<V, E>(graph);
     }
 
