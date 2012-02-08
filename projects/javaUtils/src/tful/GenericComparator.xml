@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+	<cluster>
+		<class>java.lang.Integer</class>
+	</cluster>
+
+    <constructor maxExecTime="500" skip="false"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="compare">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="java.lang.Object"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="java.lang.Object"/>
+    </method>
+</ns2:class>

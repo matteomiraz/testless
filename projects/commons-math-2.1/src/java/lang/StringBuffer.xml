@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <constructor maxExecTime="500" skip="false"/>
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="java.lang.String"/>
+    </constructor>
+    <constructor skip="true">
+        <parameter type="int"/>
+    </constructor>
+    <constructor skip="true">
+        <parameter type="java.lang.CharSequence"/>
+    </constructor>
+
+    <method kind="observer" exposeState="false" maxExecTime="500" name="toString"/>
+
+    <method kind="skip" name="append">
+        <parameter type="boolean"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="char"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="double"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="float"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="java.lang.CharSequence"/>
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="java.lang.CharSequence"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="java.lang.String"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="java.lang.StringBuffer"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="long"/>
+    </method>
+    <method kind="skip" name="appendCodePoint">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="capacity"/>
+    <method kind="skip" name="charAt">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="codePointAt">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="codePointBefore">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="codePointCount">
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="delete">
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="deleteCharAt">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="ensureCapacity">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="indexOf">
+        <parameter type="java.lang.String"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="indexOf">
+        <parameter type="java.lang.String"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="boolean"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="char"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="double"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="float"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="java.lang.CharSequence"/>
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="java.lang.CharSequence"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="java.lang.String"/>
+    </method>
+    <method kind="skip" name="insert">
+        <parameter type="int"/>
+        <parameter type="long"/>
+    </method>
+    <method kind="skip" name="lastIndexOf">
+        <parameter type="java.lang.String"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="lastIndexOf">
+        <parameter type="java.lang.String"/>
+    </method>
+    <method kind="skip" name="length"/>
+    <method kind="skip" name="offsetByCodePoints">
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="replace">
+        <parameter type="int"/>
+        <parameter type="int"/>
+        <parameter type="java.lang.String"/>
+    </method>
+    <method kind="skip" name="reverse"/>
+    <method kind="skip" name="setCharAt">
+        <parameter type="int"/>
+        <parameter type="char"/>
+    </method>
+    <method kind="skip" name="setLength">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="subSequence">
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="substring">
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="substring">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="trimToSize"/>
+</ns2:class>

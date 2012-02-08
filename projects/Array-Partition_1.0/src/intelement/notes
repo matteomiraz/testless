@@ -1,0 +1,34 @@
+The array partition example is taken from "Symbolic Execution with Abstract 
+Subsumption Checking" by Saswat Anand, Corina S. Psreanu, and Willem Visser
+and which is taken from
+T. Ball. A theory of predicate-complete test coverage and generation. MSR-TR-
+2004-28, 2004.
+
+Checking partition method,
+k=1
+Total #Pre:1 #POST: 1
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 7 num of covered location is 7
+Method {|intelement.ArrayPartition.partition$Top()V|}: Total num of branches is 8 covered is 7 branch coverage is 0.875 Total num of location is 39 num of covered location is 36
+Method {|intelement.ArrayPartition.spex_M_partition()V|}: Total num of branches is 10 covered is 3 branch coverage is 0.3 Total num of location is 91 num of covered location is 35
+Method {|intelement.ArrayPartition.isWeaklySorted()Z|}: Total num of branches is 10 covered is 1 branch coverage is 0.1 Total num of location is 45 num of covered location is 13
+
+k=2
+Total #Pre:1 #POST: 3
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 7 num of covered location is 7
+Method {|intelement.ArrayPartition.partition$Top()V|}: Total num of branches is 8 covered is 7 branch coverage is 0.875 Total num of location is 39 num of covered location is 36
+Method {|intelement.ArrayPartition.spex_M_partition()V|}: Total num of branches is 10 covered is 9 branch coverage is 0.9 Total num of location is 91 num of covered location is 67
+Method {|intelement.ArrayPartition.isWeaklySorted()Z|}: Total num of branches is 10 covered is 6 branch coverage is 0.6 Total num of location is 45 num of covered location is 33
+
+k=3
+Total #Pre:1 #POST: 7
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 7 num of covered location is 7
+Method {|intelement.ArrayPartition.partition$Top()V|}: Total num of branches is 8 covered is 7 branch coverage is 0.875 Total num of location is 39 num of covered location is 36
+Method {|intelement.ArrayPartition.spex_M_partition()V|}: Total num of branches is 10 covered is 10 branch coverage is 1.0 Total num of location is 91 num of covered location is 91
+Method {|intelement.ArrayPartition.isWeaklySorted()Z|}: Total num of branches is 10 covered is 9 branch coverage is 0.9 Total num of location is 45 num of covered location is 43
+
+k=4,
+Total #Pre:1 #POST: 15
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 7 num of covered location is 7
+Method {|intelement.ArrayPartition.partition$Top()V|}: Total num of branches is 8 covered is 7 branch coverage is 0.875 Total num of location is 39 num of covered location is 36
+Method {|intelement.ArrayPartition.spex_M_partition()V|}: Total num of branches is 10 covered is 10 branch coverage is 1.0 Total num of location is 91 num of covered location is 91
+Method {|intelement.ArrayPartition.isWeaklySorted()Z|}: Total num of branches is 10 covered is 9 branch coverage is 0.9 Total num of location is 45 num of covered location is 43

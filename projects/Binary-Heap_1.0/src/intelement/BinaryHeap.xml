@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+    
+    <constructor maxExecTime="100" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </constructor>
+    <constructor maxExecTime="500" skip="false">
+    </constructor>
+    
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isEmpty" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isFull" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="wellFormed" />
+
+    <method kind="pure" exposeState="false" maxExecTime="500" name="findMin" />
+    
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="insert">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+	        <abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="this.findMin()" />
+        </extra>
+    </method>
+
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="deleteMin" />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="makeEmpty" />
+    
+    <extra xsi:type="ns4:behavior">
+        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isEmpty()" />
+        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isFull()" />
+    </extra>
+</ns2:class>

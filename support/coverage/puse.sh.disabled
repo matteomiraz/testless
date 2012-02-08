@@ -1,0 +1,113 @@
+#!/bin/bash
+
+[ "a$BASE" == "a" ] && echo "BASE variable not set" && exit 1
+
+[ "a$JAVA" == "a" ] && JAVA="java"
+
+INSTRUMENT="$BASE/support/coverage/instrumenter.jar"
+
+# sets the "value" (0 if not found)
+# returns 0 if the value has been found, 1 otherwise
+getValue() {
+    n=$#
+
+    # search string
+    s=$1
+
+    for getValueIndex in `seq 2 2 $n`; 
+    do
+        eval key=\${$getValueIndex}
+        if [ "a$key" == "a$s" ];
+        then
+            eval $s=\${$((getValueIndex+1))}
+            return 0
+        fi
+        
+    done
+
+    eval $s=0
+    return 1
+}
+
+case $1 in
+    instrument)
+	project=$2
+
+	PRJ=$BASE/projects/$project
+	BIN=$PRJ/bin/
+
+	B=$PRJ/coverage/puse
+	INSTR=$B/classes
+
+	[ -d $B ] && rm -rf $B
+	mkdir -p $B
+	mkdir -p $INSTR
+
+        $JAVA -jar $INSTRUMENT -dir $PRJ -dirCompiled $BIN -dirInstrumented $INSTR -project -ignorePackage tful. -dataFlowCoverage PUSE > ${B}/run.out 2> ${B}/run.err
+
+	exit $?
+	;;
+
+    check)
+	project=$2
+
+	PRJ=$BASE/projects/$project
+	B=$PRJ/coverage/puse
+	INSTR=$B/classes
+
+	[ ! -d $INSTR ]  && exit 1
+	exit 0
+	;;
+
+    run)
+	project=$2
+	run=$3
+	class=$4
+
+	PRJ=$BASE/projects/$project
+	B=$PRJ/coverage/puse
+	INSTR=$B/classes
+
+	runOut=$BASE/$run/coverage/puse
+	classOut=$runOut/$class
+
+	[ ! -d $classOut ] && mkdir -p $classOut
+
+	# run coverage tool
+	$JAVA -Dtestful.fault=false -Dtestful.nWorkers=1 -Dtestful.maxExecTime=10000 -cp $BASE/support/coverage/utils.jar testful.regression.TestCoverageReporter -quiet -dir $PRJ -dirInstrumented $INSTR -logLevel FINER -log $classOut -total -writeCoverage $classOut/run.cov.gz `find $run/$class/tests -iname "*.ser.gz"` 2> $classOut/run.err > $classOut/run.out 
+
+	# if not ok, report the error
+	[ $? -ne 0 ] && exit 1
+	
+	# if the marker is not present, report the error
+	grep -q "testful.regression.TestCoverageReporter coverage report:.*" $classOut/testful.log
+	[ $? -ne 0 ] && exit 1
+
+	COV=`grep -o "testful.regression.TestCoverageReporter coverage report:.*" $classOut/testful.log | cut -d " " -f 4  | sed "y/=/ /" | sed "y/;/ /" | sed "y/-/_/"`
+	getValue bb $COV
+	getValue br $COV
+	getValue du $COV
+	getValue pu $COV
+
+        # tool, time, run
+	TTR=`echo $run | cut -d "/" -f 2,3,4 | sed "y/\//\t/"`
+		
+	echo -e "$project\t$class\t$TTR\t$bb\t$br\t$du\t$pu" >> $run/coverage/puse/cov.txt
+
+	bzip2 $classOut/testful.log $classOut/run.out $classOut/run.err
+
+	exit 0
+	;;
+
+    recovery)
+	 project=$2
+	 run=$3
+
+	 # nothing to do!
+
+	;;
+
+    *)
+	echo "Unrecognized command $1"
+	exit 1
+esac

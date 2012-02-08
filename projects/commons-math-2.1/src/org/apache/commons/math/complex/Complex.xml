@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="1" />
+		</extra>
+    </constructor>
+
+    <method kind="skip" exposeState="false" maxExecTime="500" name="getField" />
+
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getImaginary"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getReal"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="hashCode"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isInfinite"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isNaN"/>
+
+    <method kind="pure" exposeState="false" maxExecTime="500" name="abs"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="acos"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="asin" />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="atan" />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="conjugate"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="cos"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="cosh"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="exp"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="getArgument"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="log"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="tan"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="tanh"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="negate" />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="sin"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="sinh" />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="sqrt" />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="sqrt1z"/>
+
+    <method kind="pure" exposeState="false" maxExecTime="500" name="add">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.complex.Complex"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="divide">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.complex.Complex"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="multiply">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="multiply">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.complex.Complex"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="nthRoot">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="pow">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.complex.Complex"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="subtract">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.complex.Complex"/>
+    </method>
+    
+    <method kind="pure" exposeState="false" maxExecTime="500" name="equals">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0 instanceof org.apache.commons.math.complex.Complex" />
+		</extra>
+    </method>
+
+	<extra xsi:type="ns4:behavior">
+		<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.getReal()" />
+		<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.getImaginary()" />
+		<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isNaN()" />
+		<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isInfinite()" />
+	</extra>
+</ns2:class>

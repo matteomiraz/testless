@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+	<cluster>
+		<class>org.apache.commons.math.stat.descriptive.AggregateSummaryStatistics</class>
+		<class>org.apache.commons.math.stat.descriptive.DescriptiveStatistics</class>
+		<class>org.apache.commons.math.stat.descriptive.StatisticalSummaryValues</class>
+		<class>org.apache.commons.math.stat.descriptive.SummaryStatistics</class>
+	</cluster>
+</ns2:class>

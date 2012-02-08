@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Sources/Java"/>
+	<classpathentry kind="src" path="Sources/Lite"/>
+	<classpathentry kind="src" path="Sources/SAX"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<accessrules>
+			<accessrule kind="accessible" pattern="java/io/IOException"/>
+			<accessrule kind="accessible" pattern="java/io/Reader"/>
+			<accessrule kind="accessible" pattern="java/io/Serializable"/>
+			<accessrule kind="accessible" pattern="java/io/StringReader"/>
+			<accessrule kind="discouraged" pattern="java/io/**"/>
+			<accessrule kind="nonaccessible" pattern="java/nio/**"/>
+			<accessrule kind="discouraged" pattern="java/net/**"/>
+			<accessrule kind="discouraged" pattern="java/lang/Class"/>
+			<accessrule kind="discouraged" pattern="java/lang/reflect/**"/>
+			<accessrule kind="nonaccessible" pattern="java/security/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="shared.jar"/>
+	<classpathentry kind="lib" path="ThirdParty/SAX/sax.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

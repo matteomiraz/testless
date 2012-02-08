@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.util.Collection"/>
+    </constructor>
+    <constructor maxExecTime="500" skip="false"/>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="add">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="add">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.util.Collection"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.util.Collection"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addFirst">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addLast">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="clear"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="clone"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="contains">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="containsAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.util.Collection"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="descendingIterator"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="element"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="equals">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="get">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="getFirst"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="getLast"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="hashCode"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="indexOf">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="isEmpty"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="iterator"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="lastIndexOf">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="listIterator">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="listIterator"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="offer">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="offerFirst">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="offerLast">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="peek"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="peekFirst"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="peekLast"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="poll"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="pollFirst"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="pollLast"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="pop"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="push">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="remove">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="remove">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="remove"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="removeAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.util.Collection"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="removeFirst"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="removeFirstOccurrence">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="removeLast"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="removeLastOccurrence">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="retainAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.util.Collection"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="set">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="size"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="subList">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+    <method kind="skip" exposeState="true" maxExecTime="500" name="toArray"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="toString"/>
+</ns2:class>

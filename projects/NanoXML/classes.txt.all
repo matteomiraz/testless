@@ -1,0 +1,13 @@
+nanoxml.XMLElement
+net.n3.nanoxml.NonValidator
+net.n3.nanoxml.StdXMLBuilder
+net.n3.nanoxml.StdXMLParser
+net.n3.nanoxml.StdXMLReader
+net.n3.nanoxml.ValidatorPlugin
+net.n3.nanoxml.XMLElement
+net.n3.nanoxml.XMLEntityResolver
+net.n3.nanoxml.XMLParserFactory
+net.n3.nanoxml.XMLWriter
+net.n3.nanoxml.sax.SAXAdapter
+net.n3.nanoxml.sax.SAXEntityResolver
+net.n3.nanoxml.sax.SAXParser

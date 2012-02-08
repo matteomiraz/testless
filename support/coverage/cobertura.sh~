@@ -1,0 +1,103 @@
+#!/bin/bash
+
+[ "a$BASE" == "a" ] && echo "BASE variable not set" && exit 1
+[ "a$JUNIT" == "a" ] && echo "JUNIT variable not set" && exit 1
+
+[ "a$JAVA" == "a" ] && JAVA="java"
+
+COBERTURA="$BASE/support/coverage/cobertura-1.9.4.1"
+
+INSTRUMENT="$BASE/support/coverage/instrumenter.jar"
+
+case $1 in
+    instrument)
+	project=$2
+
+	# two-step instrumentation
+	# 1. cobertura -> projects/$p/coverage/cobertura/orig
+	# 2. stopper   -> projects/$p/coverage/cobertura/stopper
+
+	PRJ=$BASE/projects/$project
+	BIN=$PRJ/bin/
+
+	B=$PRJ/coverage/cobertura
+	ORIG=$B/orig
+	STOP=$B/stopper
+	DATA=$B/data.ser
+
+	[ -d $B ] && rm -rf $B
+	mkdir -p $ORIG
+	mkdir -p $STOP
+
+	bash $COBERTURA/cobertura-instrument.sh --destination $ORIG --datafile $DATA $BIN > ${ORIG}.out 2> ${ORIG}.err
+
+	[ $? -ne 0 ] && exit 1
+
+        $JAVA -jar $INSTRUMENT -stopperOnly -dir $PRJ -dirCompiled $ORIG -library $BIN -library $COBERTURA/cobertura.jar -dirInstrumented $STOP -project > ${STOP}.out 2> ${STOP}.err
+
+	exit $?
+	;;
+
+    check)
+	project=$2
+
+	PRJ=$BASE/projects/$project
+	B=$PRJ/coverage/cobertura
+	STOP=$B/stopper
+	DATA=$B/data.ser
+
+	[ -d $STOP ] && [ -f $DATA ] && exit 0
+	exit 1
+	;;
+
+    run)
+	project=$2
+	run=$3
+	class=$4
+
+	PRJ=$BASE/projects/$project
+	BIN=$PRJ/bin/
+
+	B=$PRJ/coverage/cobertura
+	STOP=$B/stopper
+	DATA=$B/data.ser
+
+	runOut=$BASE/$run/coverage/cobertura
+	classOut=$runOut/$class
+
+	#first class in the run: copy the cobertura.ser file
+	if [ ! -d $runOut ]
+	then
+	    mkdir -p $runOut
+	    cp $DATA $runOut/
+	fi
+
+	[ ! -d $classOut ] && mkdir -p $classOut
+
+	# backup
+	cp $runOut/data.ser $runOut/data.ser.bak
+
+	# run coverage tool
+	\time -v -o $classOut/run.time $JAVA -Dtestful.fault=false -Dtestful.nWorkers=1 -Dtestful.maxExecTime=10000 -Dtestful.log.level=FINE -Dtestful.log.dir=$classOut -Dnet.sourceforge.cobertura.datafile=$runOut/data.ser -cp support/coverage/utils.jar:$JUNIT testful.regression.TestfulTestCase -dir $PRJ -dirInstrumented $STOP -dirCompiled $BIN -library $COBERTURA/cobertura.jar `find $run/$class/tests -iname "*.ser.gz"` > $classOut/run.out 2> $classOut/run.err
+#	\time -v -o $classOut/run.time $JAVA -Dtestful.fault=false -Dtestful.nWorkers=1 -Dtestful.maxExecTime=10000 -Dnet.sourceforge.cobertura.datafile=$runOut/data.ser -cp support/coverage/utils.jar:$JUNIT testful.regression.TestfulTestCase -dir $PRJ -dirInstrumented $STOP -dirCompiled $BIN -logLevel FINER -log $classOut -library $COBERTURA/cobertura.jar `find $run/$class/tests -iname "*.ser.gz"` > $classOut/run.out 2> $classOut/run.err
+
+	# if not ok, report the error
+	[ $? -ne 0 ] && exit 1
+
+	bzip2 $classOut/testful.log $classOut/run.out $classOut/run.err
+
+	exit 0
+	;;
+
+    recovery)
+	 project=$2
+	 run=$3
+
+	 cp $run/coverage/cobertura/data.ser.bak $run/coverage/cobertura/data.ser
+
+	;;
+
+    *)
+	echo "Unrecognized command $1"
+	exit 1
+esac

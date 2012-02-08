@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+	<cluster>
+		<class>java.io.StringReader</class>
+	</cluster>
+    <method kind="skip" name="close"/>
+    <method kind="skip" name="mark">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="markSupported"/>
+    <method kind="skip" name="read">
+        <parameter type="java.nio.CharBuffer"/>
+    </method>
+    <method kind="skip" name="read"/>
+    <method kind="skip" name="ready"/>
+    <method kind="skip" name="reset"/>
+    <method kind="skip" name="skip">
+        <parameter type="long"/>
+    </method>
+</ns2:class>

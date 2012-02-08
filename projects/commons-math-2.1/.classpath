@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<accessrules>
+			<accessrule kind="discouraged" pattern="java/io/PrintStream"/>
+			<accessrule kind="discouraged" pattern="java/io/PrintWriter"/>
+			<accessrule kind="accessible" pattern="java/io/Serializable"/>
+			<accessrule kind="discouraged" pattern="java/lang/reflect/Array"/>
+			<accessrule kind="nonaccessible" pattern="java/io/**"/>
+			<accessrule kind="nonaccessible" pattern="java/net/**"/>
+			<accessrule kind="discouraged" pattern="java/lang/Class"/>
+			<accessrule kind="discouraged" pattern="java/lang/reflect/**"/>
+			<accessrule kind="nonaccessible" pattern="java/security/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="shared.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

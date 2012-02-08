@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <constructor maxExecTime="500" skip="false"/>
+    <constructor skip="true">
+        <parameter type="int"/>
+    </constructor>
+
+    <method kind="observer" exposeState="false" maxExecTime="500" name="toString"/>
+
+    <method kind="skip" name="append">
+        <parameter type="char"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="java.lang.CharSequence"/>
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="append">
+        <parameter type="java.lang.CharSequence"/>
+    </method>
+    <method kind="skip" name="close"/>
+    <method kind="skip" name="flush"/>
+    <method kind="skip" name="getBuffer"/>
+    <method kind="skip" name="write">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="write">
+        <parameter type="java.lang.String"/>
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="write">
+        <parameter type="java.lang.String"/>
+    </method>
+</ns2:class>

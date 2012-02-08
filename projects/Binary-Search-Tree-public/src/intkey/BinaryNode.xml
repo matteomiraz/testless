@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="intkey.BinaryNode"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="intkey.BinaryNode"/>
+        
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="p1.getElement():p2.getElement()" />
+        </extra>
+    </constructor>
+    
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </constructor>
+    
+    <constructor maxExecTime="500" skip="false" />
+    
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getElement" />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="getLeft" />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="getRight" />
+    
+	<extra xsi:type="ns4:behavior">
+		<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.getElement()" parameters="this.getLeft().getElement():this.getRight().getElement()" />
+	</extra>
+</ns2:class>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <constructor maxExecTime="500" skip="false"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getState"/>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="nextChar">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+</ns2:class>

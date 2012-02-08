@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <constructor maxExecTime="500" skip="false"/>
+
+    <constructor maxExecTime="500" skip="true">
+        <parameter type="int"/>
+        <parameter type="float"/>
+    </constructor>
+    <constructor maxExecTime="500" skip="true">
+        <parameter type="int"/>
+    </constructor>
+    <constructor maxExecTime="500" skip="true">
+        <parameter type="java.util.Map"/>
+    </constructor>
+
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="put">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="false" type="java.lang.Object"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="false" type="java.lang.Object"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="putAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="java.util.Map"/>
+    </method>
+
+    <method kind="skip" name="clear"/>
+    <method kind="skip" name="clone"/>
+    <method kind="skip" name="contains">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="containsKey">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="containsValue">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="elements"/>
+    <method kind="skip" name="entrySet"/>
+    <method kind="skip" name="equals">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="get">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="hashCode"/>
+    <method kind="skip" name="isEmpty"/>
+    <method kind="skip" name="keySet"/>
+    <method kind="skip" name="keys"/>
+    <method kind="skip" name="remove">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="size"/>
+    <method kind="skip" name="toString"/>
+    <method kind="skip" name="values"/>
+</ns2:class>

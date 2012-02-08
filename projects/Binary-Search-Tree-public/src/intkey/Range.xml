@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+
+    <constructor maxExecTime="500" skip="false" />
+
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getLower" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getUpper" />
+    
+    <method kind="pure" exposeState="false" maxExecTime="500" name="inRange">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+	    <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="this.getLower():this.getUpper()" />
+	    </extra>
+    </method>
+    
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="setLower">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+	    <extra xsi:type="ns4:behavior">
+	        <abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="this.getLower():this.getUpper()" />
+	    </extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="setUpper">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+	    <extra xsi:type="ns4:behavior">
+	        <abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="this.getLower():this.getUpper()" />
+	    </extra>
+    </method>
+    
+    <extra xsi:type="ns4:behavior">
+        <abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.getLower()" parameters="this.getUpper()" />
+    </extra>
+</ns2:class>

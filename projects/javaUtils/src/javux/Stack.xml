@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >    <cluster>
+        <class>java.lang.Object</class>
+        <class>java.lang.String</class>
+        <class>javux.Enumeration</class>
+        <class>javux.Iterator</class>
+        <class>javux.List</class>
+        <class>javux.ListIterator</class>
+        <class>tful.arrays.ObjectArray</class>
+    </cluster>
+    
+    <constructor maxExecTime="500" skip="false" />
+    
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="add">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior" >
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+			<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p1" parameters="{this}" />
+        </extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="add">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior" >
+			<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+        </extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="javux.Collection"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+        	<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p1.isEmpty()" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="javux.Collection"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0.isEmpty()" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addElement">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior" >
+			<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+        </extra>
+    </method>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="capacity"  />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="clear"  />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="clone"  />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="contains">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior" >
+			<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+        </extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="containsAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="javux.Collection"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0.isEmpty()" />
+       	</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="elementAt">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="elements"  />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="empty"  />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="ensureCapacity">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="equals">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="firstElement"  />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="get">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="hashCode"  />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="indexOf">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="indexOf">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="insertElementAt">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isEmpty"  />
+    <method kind="pure" exposeState="true" maxExecTime="500" name="iterator"  />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="lastElement"  />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="lastIndexOf">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="lastIndexOf">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+       	</extra>
+    </method>
+    <method kind="pure" exposeState="true" maxExecTime="500" name="listIterator">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="pure" exposeState="true" maxExecTime="500" name="listIterator"  />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="peek"  />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="pop"  />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="push">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="remove">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="remove">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="removeAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="javux.Collection"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0.isEmpty()" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="removeAllElements"  />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="removeElement">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="removeElementAt">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="retainAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="javux.Collection"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0.isEmpty()" />
+       	</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="search">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="set">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p1" parameters="{this}" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="setElementAt">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorRefCtx" expression="p0" parameters="{this}" />
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="setSize">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="size"  />
+    <method kind="pure" exposeState="true" maxExecTime="500" name="subList">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:this.size()" />
+        	<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="0:this.size()" />
+       	</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="testful_copyInto">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.ObjectArray"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="testful_toArray">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.ObjectArray"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="testful_toArray"  />
+    <method kind="skip" exposeState="true" maxExecTime="500" name="toArray"  />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="toString"  />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="trimToSize"  />
+    
+    <extra xsi:type="ns4:behavior">
+        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0.isEmpty()" />
+    </extra>
+</ns2:class>

@@ -1,0 +1,163 @@
+#!/bin/bash
+
+[ "a$BASE" == "a" ] && echo "BASE variable not set" && exit 1
+[ "a$JUNIT" == "a" ] && echo "JUNIT variable not set" && exit 1
+
+[ "a$JAVA" == "a" ] && JAVA="java"
+
+DATEC="$BASE/support/coverage/datec"
+
+INSTRUMENT="$BASE/support/coverage/instrumenter.jar"
+
+case $1 in
+
+    instrument)
+	project=$2
+
+	PRJ=$BASE/projects/$project
+	BIN=$PRJ/bin/
+
+	B=$PRJ/coverage/datec
+	ORIG=$B/orig
+	STOP=$B/stopper
+	DB=$B/datec.db
+
+	[ -d $B ] && rm -rf $B
+	mkdir -p $ORIG
+	mkdir -p $STOP
+
+	rm -rf /tmp/DatecUnzip
+
+	# create code.zip
+	cd $PRJ
+	mkdir .tmp
+	cp -R bin/* .tmp/
+	cp -R src/* .tmp/
+	cd .tmp/
+	jar -xf ../shared.jar
+	zip -qr $ORIG/code.zip .
+	cd ..
+	rm -rf .tmp
+
+	cd $ORIG
+
+	echo "prjName = $project" > datec.properties
+	echo "projectDirectory = $ORIG/" >> datec.properties
+	echo "srcFolder = $PRJ/src/" >> datec.properties
+	echo "binaryFolder = $BIN/" >> datec.properties
+	echo "pathUnzip = /tmp/" >> datec.properties
+	echo "verbose = false" >> datec.properties
+	echo "ignoreStaticCalls = true" >> datec.properties
+	echo "ignoreStaticVariables = false" >> datec.properties
+	echo "directoryInstrumenter = /tmp/DatecUnzip/" >> datec.properties	
+	echo "createReport = false" >> datec.properties
+	echo "cleanAfterAnalysis = false" >> datec.properties ## not working if set to true
+
+	echo "runDatecAnalysis" > ../orig.out; echo "runDatecAnalysis" > ../orig.err
+	bash $DATEC/runDatecAnalysis.sh code.zip  >> ../orig.out 2>> ../orig.err
+	echo -e "------------\n" >> ../orig.out; echo -e "------------\n" >> ../orig.err
+	    
+	echo "instrument" >> ../orig.out; echo "instrument" >> ../orig.err
+	bash $DATEC/instrument.sh code.zip >> ../orig.out 2>> ../orig.err
+	echo -e "------------\n" >> ../orig.out; echo -e "------------\n" >> ../orig.err
+
+	cp datec.db $DB
+
+	mkdir $ORIG/classes
+	cd $ORIG/classes 
+	jar -xf ../instrument.jar
+	[ $? -ne 0 ] && exit 1
+
+	cd $BASE
+
+        $JAVA -jar $INSTRUMENT -stopperOnly -dir $PRJ -dirCompiled $ORIG/classes -library $DATEC/target/DaTeC-1.0-SNAPSHOT.jar -dirInstrumented $STOP -project > ${STOP}.out 2> ${STOP}.err
+
+	exit $?
+	;;
+
+    check)
+	project=$2
+
+	PRJ=$BASE/projects/$project
+	B=$PRJ/coverage/datec
+	STOP=$B/stopper
+	DB=$B/datec.db
+
+	[ -d $STOP ] && [ -f $DB ] && exit 0
+	exit 1
+	;;
+
+    run)
+	project=$2
+	run=$3
+	class=$4
+
+	PRJ=$BASE/projects/$project
+	BIN=$PRJ/bin/
+	B=$PRJ/coverage/datec
+	STOP=$B/stopper
+	DB=$B/datec.db
+
+	runOut=$BASE/$run/coverage/datec
+	classOut=$runOut/$class
+
+	#first class in the run: copy the datec.ser file
+	if [ ! -d $runOut ]
+	then
+	    mkdir -p $runOut
+
+	    cp $DB $runOut/datec.db
+
+	    echo "prjName = $project" > $runOut/datec.properties
+	    echo "projectDirectory = ./" >> $runOut/datec.properties
+	    echo "pathUnzip = /tmp/" >> $runOut/datec.properties
+	    echo "verbose = false" >> $runOut/datec.properties
+	    echo "ignoreStaticCalls = true" >> $runOut/datec.properties
+	    echo "ignoreStaticVariables = false" >> $runOut/datec.properties
+	    echo "createReport = false" >> $runOut/datec.properties
+	    echo "cleanAfterAnalysis = true" >> $runOut/datec.properties
+	    echo "directoryInstrumenter = /tmp/DatecUnzip/" >> $runOut/datec.properties
+	fi
+
+	[ ! -d $classOut ] && mkdir -p $classOut
+
+	# backup
+	cp $runOut/datec.db $runOut/datec.db.bak
+
+	cd $runOut
+
+	# run coverage tool
+	\time -v -o $classOut/run.time $JAVA -Dtestful.fault=false -Dtestful.maxExecTime=10000 -cp $BASE/support/coverage/utils.jar:$JUNIT:$DATEC/lib/sqlite-jdbc-3.6.23.1-beta-1-SNAPSHOT.jar testful.regression.TestfulTestCase -dir $PRJ -dirInstrumented $STOP -dirCompiled $BIN -library $DATEC/target/DaTeC-1.0-SNAPSHOT.jar -library $DATEC/lib/sqlite-jdbc-3.6.23.1-beta-1-SNAPSHOT.jar -logLevel FINER -log $classOut `find $BASE/$run/$class/tests -iname "*.ser.gz"` > $classOut/run.out 2> $classOut/run.err
+
+	# if not ok, report the error
+	[ $? -ne 0 ] && exit 1
+
+	bzip2 $classOut/testful.log $classOut/run.out $classOut/run.err
+	
+	exit 0
+	;;
+
+    recovery)
+	 project=$2
+	 run=$3
+
+	 runOut=$BASE/$run/coverage/datec
+	 
+	 cp $runOut/datec.db.bak $runOut/datec.db
+
+	;;
+
+
+    report)
+	run=$2
+
+	cd $BASE/$run/coverage/datec
+
+	$JAVA -cp $DATEC/target/DaTeC-1.0-SNAPSHOT.jar:$DATEC/lib/sqlite-jdbc-3.6.23.1-beta-1-SNAPSHOT.jar ch.unisi.inf.datec.Report
+
+	;;
+
+    *)
+	echo "Unrecognized command $1"
+	exit 1
+esac

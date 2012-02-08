@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="0:p0" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p2" parameters="0:10" />
+		</extra>
+    </constructor>
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="0:1.0/p0" />
+		</extra>
+    </constructor>
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+		</extra>
+    </constructor>
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="-1*p0:0:p0" />
+		</extra>
+    </constructor>
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+		</extra>
+    </constructor>
+
+    <method kind="skip" exposeState="false" maxExecTime="500" name="getField" />
+
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getDenominator"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getNumerator"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="doubleValue"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="hashCode"/>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="toString"/>
+    
+    <method kind="pure" exposeState="false" maxExecTime="500" name="abs"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="byteValue"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="floatValue"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="negate"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="reciprocal"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="shortValue"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="intValue"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="longValue"/>
+
+    <method kind="static" exposeState="false" maxExecTime="500" name="getReducedFraction">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p1" parameters="-1*p0:0:p0" />
+		</extra>
+    </method>
+
+    <method kind="pure" exposeState="false" maxExecTime="500" name="add">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue() + p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="add">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.fraction.Fraction"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue() + p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="divide">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue() / p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="divide">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.fraction.Fraction"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue() / p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="multiply">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue() * p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="multiply">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.fraction.Fraction"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue() * p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="subtract">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue() - p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="subtract">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.fraction.Fraction"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue() - p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+
+    <method kind="pure" exposeState="false" maxExecTime="500" name="compareTo">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="org.apache.commons.math.fraction.Fraction"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="-1:0:1" />
+		</extra>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="equals">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0 instanceof org.apache.commons.math.fraction.Fraction" />
+		</extra>
+    </method>
+    
+	<extra xsi:type="ns4:behavior">
+		<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.getNumerator()" />
+		<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.getDenominator()" />
+		<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.doubleValue()" parameters="-1:0:1" />
+	</extra>
+</ns2:class>

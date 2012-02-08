@@ -1,0 +1,6 @@
+Cobertura 1.9.4.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+Instrumenting 1 file to /home/ikpeme/testful/base/projects/NanoXML/coverage/cobertura/orig
+WARN   visitEnd, No line number information found for class adapter.DriverCreator$1.  Perhaps you need to compile with debug=true?
+WARN   visitEnd, No line number information found for class adapter.DriverCreator$1.  Perhaps you need to compile with debug=true?
+Cobertura: Saved information on 53 classes.
+Instrument time: 670ms

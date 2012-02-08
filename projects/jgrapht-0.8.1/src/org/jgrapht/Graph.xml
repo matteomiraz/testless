@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+	<cluster>
+		<class>org.jgrapht.DirectedGraph</class>
+		<class>org.jgrapht.UndirectedGraph</class>
+	</cluster>
+</ns2:class>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+
+    <cluster>
+        <class>java.lang.String</class>
+        <class>tful.arrays.intArray</class>
+    </cluster>
+    
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:16" />
+        </extra>
+    </constructor>
+    
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.intArray"/>
+    </constructor>
+
+    <method kind="skip" exposeState="true" maxExecTime="500" name="getSetElements" />
+    
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getActualSize" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getResizedTimes" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getSetLast" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="getSetSize" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isEmpty" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isOverflow" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="toString" />
+
+    <method kind="pure" exposeState="false" maxExecTime="500" name="testful_getSetElements" />
+    <method kind="pure" exposeState="false" maxExecTime="500" name="contains">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="contains">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="OrdSet"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="elementAt">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="equals">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="OrdSet"/>
+    </method>
+
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="add">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+	        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.contains(p0)" />
+        </extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="remove">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+	        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.contains(p0)" />
+        </extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="union">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="OrdSet"/>
+        <extra xsi:type="ns4:behavior">
+	        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0 != null &amp;&amp; this.contains(p0)" />
+	        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0 != null &amp;&amp; p0.isEmpty()" />
+    	    <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="p0 != null &amp;&amp; p0.isOverflow()" />
+        </extra>
+    </method>
+
+    <extra xsi:type="ns4:behavior">
+        <abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.getSetLast()" parameters="0:this.getSetSize():16" />
+        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isEmpty()" />
+        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isOverflow()" />
+        <abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.getResizedTimes()" parameters="0:2" />
+    </extra>
+</ns2:class>

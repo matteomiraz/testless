@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="org.apache.commons.math.distribution.ChiSquaredDistribution"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </constructor>
+    <constructor maxExecTime="500" skip="false">
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </constructor>
+
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="setDistribution">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="org.apache.commons.math.distribution.ChiSquaredDistribution"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquare">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquare">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArrayArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquareDataSetsComparison">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquareTest">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquareTest">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquareTest">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArrayArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquareTest">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArrayArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquareTestDataSetsComparison">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_chiSquareTestDataSetsComparison">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.longArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+
+    <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior">
+        <abstraction parameters="0:10" expression="this.size()" function="testful.coverage.behavior.AbstractorNumber"/>
+    </extra>
+</ns2:class>

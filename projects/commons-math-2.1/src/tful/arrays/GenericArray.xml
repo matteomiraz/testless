@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="false" type="tful.arrays.GenericArray"/>
+    </constructor>
+    <constructor skip="true">
+        <parameter type="java.lang.Object[]"/>
+    </constructor>
+    <constructor maxExecTime="500" skip="false"/>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addHead">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="false" type="java.lang.Object"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="addTail">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="false" type="java.lang.Object"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="delHead"/>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="delTail"/>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="set">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="false" type="java.lang.Object"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="setHead">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="true" maxExecTime="500" name="toArray"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="toString"/>
+</ns2:class>

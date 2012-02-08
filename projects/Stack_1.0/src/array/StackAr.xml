@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+    <cluster>
+        <class>java.lang.Object</class>
+    </cluster>
+    
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0" parameters="0:1" />
+        </extra>
+    </constructor>
+    
+    <constructor maxExecTime="500" skip="false" />
+    
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isEmpty" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isFull" />
+
+    <method kind="pure" exposeState="false" maxExecTime="500" name="top" />
+
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="makeEmpty" />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="pop" />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="topAndPop" />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="push">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorReference" expression="p0 != null" />
+        </extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="pushPop">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+        <extra xsi:type="ns4:behavior">
+        	<abstraction function="testful.coverage.behavior.AbstractorReference" expression="p0 != null" />
+        </extra>
+    </method>
+    
+    <extra xsi:type="ns4:behavior">
+        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isEmpty()" />
+        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isFull()" />
+    </extra>
+</ns2:class>

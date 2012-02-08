@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <constructor skip="true"/>
+    <constructor skip="true">
+        <parameter type="java.util.Collection"/>
+    </constructor>
+    <constructor skip="true">
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </constructor>
+    <constructor skip="true">
+        <parameter type="int"/>
+    </constructor>
+
+    <method kind="pure" exposeState="false" maxExecTime="500" name="firstElement"/>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="get">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+    <method kind="observer" exposeState="false" maxExecTime="500" name="toString"/>
+
+    <method kind="skip" name="add">
+        <parameter type="int"/>
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="add">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="addAll">
+        <parameter type="int"/>
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="addAll">
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="addElement">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="capacity"/>
+    <method kind="skip" name="clear"/>
+    <method kind="skip" name="clone"/>
+    <method kind="skip" name="contains">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="containsAll">
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="elementAt">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="elements"/>
+    <method kind="skip" name="ensureCapacity">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="equals">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="hashCode"/>
+    <method kind="skip" name="indexOf">
+        <parameter type="java.lang.Object"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="indexOf">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="insertElementAt">
+        <parameter type="java.lang.Object"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="isEmpty"/>
+    <method kind="skip" name="iterator"/>
+    <method kind="skip" name="lastElement"/>
+    <method kind="skip" name="lastIndexOf">
+        <parameter type="java.lang.Object"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="lastIndexOf">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="listIterator">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="listIterator"/>
+    <method kind="skip" name="remove">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="remove">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="removeAll">
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="removeAllElements"/>
+    <method kind="skip" name="removeElement">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="removeElementAt">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="retainAll">
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="set">
+        <parameter type="int"/>
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="setElementAt">
+        <parameter type="java.lang.Object"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="setSize">
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="size"/>
+    <method kind="skip" name="subList">
+        <parameter type="int"/>
+        <parameter type="int"/>
+    </method>
+    <method kind="skip" name="toArray"/>
+    <method kind="skip" name="trimToSize"/>
+</ns2:class>

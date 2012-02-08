@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+	<cluster>
+		<class>org.jgrapht.experimental.equivalence.EquivalenceComparatorChainBase</class>
+		<class>org.jgrapht.experimental.equivalence.UniformEquivalenceComparator</class>
+		<class>org.jgrapht.experimental.isomorphism.VertexDegreeEquivalenceComparator</class>
+	</cluster>
+</ns2:class>

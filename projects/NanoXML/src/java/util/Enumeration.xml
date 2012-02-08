@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <method kind="observer" exposeState="false" maxExecTime="500" name="hasMoreElements"/>
+    <method kind="mutator" exposeState="true" maxExecTime="500" name="nextElement"/>
+</ns2:class>

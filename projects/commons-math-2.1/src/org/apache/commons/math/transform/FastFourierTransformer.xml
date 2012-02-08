@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <cluster>
+        <class>java.lang.Object</class>
+        <class>tful.arrays.ComplexArray</class>
+        <class>tful.arrays.doubleArray</class>
+    </cluster>
+    <constructor maxExecTime="500" skip="false">
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </constructor>
+    <method kind="mutator" exposeState="true" maxExecTime="500" name="inversetransform">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="true" maxExecTime="500" name="inversetransform2">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="static" exposeState="false" maxExecTime="500" name="isPowerOf2">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="long"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="mdfft">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="java.lang.Object"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="boolean"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="static" exposeState="true" maxExecTime="500" name="sample">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_inversetransform">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_inversetransform">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.ComplexArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_inversetransform">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_inversetransform2">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_inversetransform2">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.ComplexArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_inversetransform2">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="static" exposeState="false" maxExecTime="500" name="testful_sample">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="static" exposeState="false" maxExecTime="500" name="testful_scaleArray">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.ComplexArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="static" exposeState="false" maxExecTime="500" name="testful_scaleArray">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_transform">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_transform">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.ComplexArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_transform">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_transform2">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_transform2">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.ComplexArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="testful_transform2">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="static" exposeState="false" maxExecTime="500" name="testful_verifyDataSet">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.ObjectArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="static" exposeState="false" maxExecTime="500" name="testful_verifyDataSet">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="tful.arrays.doubleArray"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="true" maxExecTime="500" name="transform">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="mutator" exposeState="true" maxExecTime="500" name="transform2">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="org.apache.commons.math.analysis.UnivariateRealFunction"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <method kind="static" exposeState="false" maxExecTime="500" name="verifyInterval">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="double"/>
+        <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior"/>
+    </method>
+    <extra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" xsi:type="ns4:behavior">
+        <abstraction parameters="0:10" expression="this.size()" function="testful.coverage.behavior.AbstractorNumber"/>
+    </extra>
+</ns2:class>

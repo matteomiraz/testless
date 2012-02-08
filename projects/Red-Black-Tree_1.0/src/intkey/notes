@@ -1,0 +1,243 @@
+The red black tree implementation is taken from java.util.TreeMap in
+Java 1.5.
+
+Check put method (add an element into the tree),
+k=1,
+Total #Pre:4 #POST: 10
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 12 num of covered location is 12
+Method {|intkey.TreeMap.compare(II)I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 14 num of covered location is 14
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 7 branch coverage is 0.5833333333333334 Total num of location is 61 num of covered location is 57
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 14 branch coverage is 0.6363636363636364 Total num of location is 69 num of covered location is 65
+Method {|intkey.TreeMap.spex_M_put(ILjava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 10 covered is 8 branch coverage is 0.8 Total num of location is 96 num of covered location is 86
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 22 num of covered location is 22
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 7 branch coverage is 0.7 Total num of location is 33 num of covered location is 31
+Method {|intkey.TreeMap.fixAfterInsertion(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 20 covered is 3 branch coverage is 0.15 Total num of location is 243 num of covered location is 22
+Method {|intkey.TreeMap.put$Top(ILjava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 10 covered is 7 branch coverage is 0.7 Total num of location is 50 num of covered location is 46
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 12 branch coverage is 0.5454545454545454 Total num of location is 64 num of covered location is 50
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.TreeMap$Entry.setValue(Ljava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.incrementSize()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 13 num of covered location is 13
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 18 branch coverage is 0.9 Total num of location is 65 num of covered location is 65
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 3 branch coverage is 0.75 Total num of location is 20 num of covered location is 18
+Method {|intkey.TreeMap$Entry.<init>(ILjava/lang/Object;Lintkey/TreeMap$Entry;)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 21 num of covered location is 21
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 6 branch coverage is 0.75 Total num of location is 29 num of covered location is 29
+k=2,
+Total #Pre:12 #POST: 78
+Method {|intkey.TreeMap.rightOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 12 num of covered location is 12
+Method {|intkey.TreeMap.colorOf(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 11 branch coverage is 0.9166666666666666 Total num of location is 61 num of covered location is 61
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 9 branch coverage is 0.9 Total num of location is 33 num of covered location is 33
+Method {|intkey.TreeMap.fixAfterInsertion(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 20 covered is 17 branch coverage is 0.85 Total num of location is 243 num of covered location is 243
+Method {|intkey.TreeMap.put$Top(ILjava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 10 covered is 7 branch coverage is 0.7 Total num of location is 50 num of covered location is 46
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 18 branch coverage is 0.8181818181818182 Total num of location is 64 num of covered location is 62
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.TreeMap$Entry.setValue(Ljava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.incrementSize()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 13 num of covered location is 13
+Method {|intkey.TreeMap.leftOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method {|intkey.TreeMap$Entry.<init>(ILjava/lang/Object;Lintkey/TreeMap$Entry;)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 21 num of covered location is 21
+Method {|intkey.TreeMap.rotateLeft(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 49 num of covered location is 41
+Method {|intkey.TreeMap.compare(II)I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 14 num of covered location is 14
+Method {|intkey.TreeMap.spex_M_put(ILjava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 10 covered is 10 branch coverage is 1.0 Total num of location is 96 num of covered location is 95
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 18 branch coverage is 0.8181818181818182 Total num of location is 69 num of covered location is 68
+Method {|intkey.TreeMap.setColor(Lintkey/TreeMap$Entry;Z)V|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 7 num of covered location is 7
+Method {|intkey.TreeMap.parentOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 22 num of covered location is 22
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 20 num of covered location is 20
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 18 branch coverage is 0.9 Total num of location is 65 num of covered location is 65
+Method {|intkey.TreeMap.rotateRight(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 49 num of covered location is 41
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 8 branch coverage is 1.0 Total num of location is 29 num of covered location is 29
+k=3,
+Total #Pre:96 #POST: 1509
+Method {|intkey.TreeMap.rightOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 12 num of covered location is 12
+Method {|intkey.TreeMap.colorOf(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 11 branch coverage is 0.9166666666666666 Total num of location is 61 num of covered location is 61
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 10 branch coverage is 1.0 Total num of location is 33 num of covered location is 33
+Method {|intkey.TreeMap.fixAfterInsertion(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 20 covered is 17 branch coverage is 0.85 Total num of location is 243 num of covered location is 243
+Method {|intkey.TreeMap.put$Top(ILjava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 10 covered is 7 branch coverage is 0.7 Total num of location is 50 num of covered location is 46
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 21 branch coverage is 0.9545454545454546 Total num of location is 64 num of covered location is 64
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.TreeMap$Entry.setValue(Ljava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.incrementSize()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 13 num of covered location is 13
+Method {|intkey.TreeMap.leftOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method {|intkey.TreeMap$Entry.<init>(ILjava/lang/Object;Lintkey/TreeMap$Entry;)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 21 num of covered location is 21
+Method {|intkey.TreeMap.rotateLeft(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 6 covered is 5 branch coverage is 0.8333333333333334 Total num of location is 49 num of covered location is 45
+Method {|intkey.TreeMap.compare(II)I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 14 num of covered location is 14
+Method {|intkey.TreeMap.spex_M_put(ILjava/lang/Object;)Ljava/lang/Object;|}: Total num of branches is 10 covered is 10 branch coverage is 1.0 Total num of location is 96 num of covered location is 95
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 20 branch coverage is 0.9090909090909091 Total num of location is 69 num of covered location is 69
+Method {|intkey.TreeMap.setColor(Lintkey/TreeMap$Entry;Z)V|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 7 num of covered location is 7
+Method {|intkey.TreeMap.parentOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 22 num of covered location is 22
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 20 num of covered location is 20
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 18 branch coverage is 0.9 Total num of location is 65 num of covered location is 65
+Method {|intkey.TreeMap.rotateRight(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 6 covered is 5 branch coverage is 0.8333333333333334 Total num of location is 49 num of covered location is 45
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 8 branch coverage is 1.0 Total num of location is 29 num of covered location is 29
+
+Check remove method (remove an element from the tree),
+k=1,
+Total #Pre:2 #POST: 5
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap.decrementSize()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 13 num of covered location is 13
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 7 branch coverage is 0.5833333333333334 Total num of location is 61 num of covered location is 57
+Method {|intkey.TreeMap$Entry.size()I|}: Total num of branches is 4 covered is 2 branch coverage is 0.5 Total num of location is 30 num of covered location is 18
+Method {|intkey.TreeMap.getEntry(I)Lintkey/TreeMap$Entry;|}: Total num of branches is 6 covered is 6 branch coverage is 1.0 Total num of location is 30 num of covered location is 30
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 7 branch coverage is 0.3181818181818182 Total num of location is 69 num of covered location is 37
+Method {|intkey.TreeMap.spex_M_remove(I)Ljava/lang/Object;|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 20 num of covered location is 20
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap.realSize()I|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 12 num of covered location is 12
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 2 branch coverage is 0.3333333333333333 Total num of location is 28 num of covered location is 18
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 2 branch coverage is 0.5 Total num of location is 22 num of covered location is 14
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.deleteEntry(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 24 covered is 4 branch coverage is 0.16666666666666666 Total num of location is 130 num of covered location is 26
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 2 branch coverage is 0.2 Total num of location is 33 num of covered location is 12
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 6 branch coverage is 0.2727272727272727 Total num of location is 64 num of covered location is 24
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 2 branch coverage is 0.3333333333333333 Total num of location is 28 num of covered location is 18
+Method {|intkey.TreeMap.remove$Top(I)Ljava/lang/Object;|}: Total num of branches is 14 covered is 11 branch coverage is 0.7857142857142857 Total num of location is 65 num of covered location is 61
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 16 branch coverage is 0.8 Total num of location is 65 num of covered location is 61
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 3 branch coverage is 0.75 Total num of location is 20 num of covered location is 18
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 6 branch coverage is 0.75 Total num of location is 29 num of covered location is 29
+
+k=2,
+Total #Pre:6 #POST: 43
+Method {|intkey.TreeMap.rightOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap.colorOf(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.decrementSize()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 13 num of covered location is 13
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 11 branch coverage is 0.9166666666666666 Total num of location is 61 num of covered location is 61
+Method {|intkey.TreeMap.realSize()I|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 12 num of covered location is 12
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 9 branch coverage is 0.9 Total num of location is 33 num of covered location is 33
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 18 branch coverage is 0.8181818181818182 Total num of location is 64 num of covered location is 62
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.TreeMap.leftOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method {|intkey.TreeMap.fixAfterDeletion(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 22 covered is 11 branch coverage is 0.5 Total num of location is 296 num of covered location is 111
+Method {|intkey.TreeMap.successor(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 10 covered is 3 branch coverage is 0.3 Total num of location is 43 num of covered location is 17
+Method {|intkey.TreeMap$Entry.size()I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 30 num of covered location is 30
+Method {|intkey.TreeMap.getEntry(I)Lintkey/TreeMap$Entry;|}: Total num of branches is 6 covered is 6 branch coverage is 1.0 Total num of location is 30 num of covered location is 30
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 18 branch coverage is 0.8181818181818182 Total num of location is 69 num of covered location is 68
+Method {|intkey.TreeMap.setColor(Lintkey/TreeMap$Entry;Z)V|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 7 num of covered location is 7
+Method {|intkey.TreeMap.parentOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method {|intkey.TreeMap.spex_M_remove(I)Ljava/lang/Object;|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 20 num of covered location is 20
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 22 num of covered location is 22
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.TreeMap.deleteEntry(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 24 covered is 18 branch coverage is 0.75 Total num of location is 130 num of covered location is 115
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 18 branch coverage is 0.9 Total num of location is 65 num of covered location is 65
+Method {|intkey.TreeMap.remove$Top(I)Ljava/lang/Object;|}: Total num of branches is 14 covered is 11 branch coverage is 0.7857142857142857 Total num of location is 65 num of covered location is 61
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 20 num of covered location is 20
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 8 branch coverage is 1.0 Total num of location is 29 num of covered location is 29
+
+k=3,
+Total #Pre:37 #POST: 673
+Method {|intkey.TreeMap.rightOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap.colorOf(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.decrementSize()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 13 num of covered location is 13
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 11 branch coverage is 0.9166666666666666 Total num of location is 61 num of covered location is 61
+Method {|intkey.TreeMap.realSize()I|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 12 num of covered location is 12
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 10 branch coverage is 1.0 Total num of location is 33 num of covered location is 33
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 21 branch coverage is 0.9545454545454546 Total num of location is 64 num of covered location is 64
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.TreeMap.leftOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method {|intkey.TreeMap.fixAfterDeletion(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 22 covered is 22 branch coverage is 1.0 Total num of location is 296 num of covered location is 296
+Method {|intkey.TreeMap.rotateLeft(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 6 covered is 5 branch coverage is 0.8333333333333334 Total num of location is 49 num of covered location is 45
+Method {|intkey.TreeMap.successor(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 10 covered is 4 branch coverage is 0.4 Total num of location is 43 num of covered location is 20
+Method {|intkey.TreeMap$Entry.size()I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 30 num of covered location is 30
+Method {|intkey.TreeMap.getEntry(I)Lintkey/TreeMap$Entry;|}: Total num of branches is 6 covered is 6 branch coverage is 1.0 Total num of location is 30 num of covered location is 30
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 20 branch coverage is 0.9090909090909091 Total num of location is 69 num of covered location is 69
+Method {|intkey.TreeMap.setColor(Lintkey/TreeMap$Entry;Z)V|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 7 num of covered location is 7
+Method {|intkey.TreeMap.parentOf(Lintkey/TreeMap$Entry;)Lintkey/TreeMap$Entry;|}: Total num of branches is 2 covered is 1 branch coverage is 0.5 Total num of location is 8 num of covered location is 6
+Method {|intkey.TreeMap.spex_M_remove(I)Ljava/lang/Object;|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 20 num of covered location is 20
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 22 num of covered location is 22
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.deleteEntry(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 24 covered is 21 branch coverage is 0.875 Total num of location is 130 num of covered location is 130
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 18 branch coverage is 0.9 Total num of location is 65 num of covered location is 65
+Method {|intkey.TreeMap.remove$Top(I)Ljava/lang/Object;|}: Total num of branches is 14 covered is 11 branch coverage is 0.7857142857142857 Total num of location is 65 num of covered location is 61
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 20 num of covered location is 20
+Method {|intkey.TreeMap.rotateRight(Lintkey/TreeMap$Entry;)V|}: Total num of branches is 6 covered is 5 branch coverage is 0.8333333333333334 Total num of location is 49 num of covered location is 45
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 8 branch coverage is 1.0 Total num of location is 29 num of covered location is 29
+
+Check get(int) method,
+k=1,
+Total #Pre:2 #POST: 5
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 7 branch coverage is 0.5833333333333334 Total num of location is 61 num of covered location is 57
+Method {|intkey.TreeMap.getEntry(I)Lintkey/TreeMap$Entry;|}: Total num of branches is 6 covered is 6 branch coverage is 1.0 Total num of location is 30 num of covered location is 30
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 7 branch coverage is 0.3181818181818182 Total num of location is 69 num of covered location is 37
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|intkey.TreeMap.get$Top(I)Ljava/lang/Object;|}: Total num of branches is 6 covered is 5 branch coverage is 0.8333333333333334 Total num of location is 36 num of covered location is 33
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 2 branch coverage is 0.3333333333333333 Total num of location is 28 num of covered location is 18
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 2 branch coverage is 0.5 Total num of location is 22 num of covered location is 14
+Method {|intkey.TreeMap.spex_M_get(I)Ljava/lang/Object;|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 14 num of covered location is 14
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 2 branch coverage is 0.2 Total num of location is 33 num of covered location is 12
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 6 branch coverage is 0.2727272727272727 Total num of location is 64 num of covered location is 24
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 2 branch coverage is 0.3333333333333333 Total num of location is 28 num of covered location is 18
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 16 branch coverage is 0.8 Total num of location is 65 num of covered location is 61
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 3 branch coverage is 0.75 Total num of location is 20 num of covered location is 18
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 6 branch coverage is 0.75 Total num of location is 29 num of covered location is 29
+
+Check lastKey method,
+k=1,
+Total #Pre:2 #POST: 2
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.spex_M_lastKey()I|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.lastEntry()Lintkey/TreeMap$Entry;|}: Total num of branches is 4 covered is 3 branch coverage is 0.75 Total num of location is 16 num of covered location is 13
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 7 branch coverage is 0.5833333333333334 Total num of location is 61 num of covered location is 57
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 7 branch coverage is 0.3181818181818182 Total num of location is 69 num of covered location is 37
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|java.lang.RuntimeException.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 3 num of covered location is 3
+Method {|java.util.NoSuchElementException.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 4 num of covered location is 4
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 2 branch coverage is 0.5 Total num of location is 22 num of covered location is 14
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 2 branch coverage is 0.3333333333333333 Total num of location is 28 num of covered location is 18
+Method {|intkey.TreeMap.key(Lintkey/TreeMap$Entry;)I|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 11 num of covered location is 11
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 2 branch coverage is 0.2 Total num of location is 33 num of covered location is 12
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 6 branch coverage is 0.2727272727272727 Total num of location is 64 num of covered location is 24
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 2 branch coverage is 0.3333333333333333 Total num of location is 28 num of covered location is 18
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 16 branch coverage is 0.8 Total num of location is 65 num of covered location is 61
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 3 branch coverage is 0.75 Total num of location is 20 num of covered location is 18
+Method {|intkey.TreeMap.lastKey$Top()I|}: Total num of branches is 6 covered is 5 branch coverage is 0.8333333333333334 Total num of location is 35 num of covered location is 32
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 6 branch coverage is 0.75 Total num of location is 29 num of covered location is 29
+k=2,
+Total #Pre:6 #POST: 6
+Method MAIN: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.spex_M_lastKey()I|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.TreeMap.lastEntry()Lintkey/TreeMap$Entry;|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 16 num of covered location is 16
+Method {|intkey.TreeMap$Entry.ordered(Lintkey/TreeMap$Entry;Lintkey/Range;)Z|}: Total num of branches is 12 covered is 11 branch coverage is 0.9166666666666666 Total num of location is 61 num of covered location is 61
+Method {|intkey.TreeMap$Entry.consistentlyBlackHeight(I)Z|}: Total num of branches is 22 covered is 18 branch coverage is 0.8181818181818182 Total num of location is 69 num of covered location is 68
+Method {|intkey.TreeMap$Entry.ordered()Z|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 10 num of covered location is 10
+Method {|java.lang.RuntimeException.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 3 num of covered location is 3
+Method {|java.util.NoSuchElementException.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 4 num of covered location is 4
+Method {|intkey.Range.setUpper(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.TreeMap$Entry.blackHeight()I|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 22 num of covered location is 22
+Method {|intkey.TreeMap.key(Lintkey/TreeMap$Entry;)I|}: Total num of branches is 2 covered is 2 branch coverage is 1.0 Total num of location is 11 num of covered location is 11
+Method {|intkey.Range.<init>()V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 8 num of covered location is 8
+Method {|intkey.Range.<init>(IIZZ)V|}: Total num of branches is 0 covered is 0 branch coverage is NaN Total num of location is 15 num of covered location is 15
+Method {|intkey.Range.inRange(I)Z|}: Total num of branches is 10 covered is 9 branch coverage is 0.9 Total num of location is 33 num of covered location is 33
+Method {|intkey.TreeMap$Entry.redConsistency()Z|}: Total num of branches is 22 covered is 18 branch coverage is 0.8181818181818182 Total num of location is 64 num of covered location is 62
+Method {|intkey.Range.setLower(I)Lintkey/Range;|}: Total num of branches is 6 covered is 4 branch coverage is 0.6666666666666666 Total num of location is 28 num of covered location is 23
+Method {|intkey.TreeMap$Entry.wellConnected(Lintkey/TreeMap$Entry;)Z|}: Total num of branches is 20 covered is 18 branch coverage is 0.9 Total num of location is 65 num of covered location is 65
+Method {|intkey.TreeMap$Entry.blackConsistency()Z|}: Total num of branches is 4 covered is 4 branch coverage is 1.0 Total num of location is 20 num of covered location is 20
+Method {|intkey.TreeMap.lastKey$Top()I|}: Total num of branches is 6 covered is 5 branch coverage is 0.8333333333333334 Total num of location is 35 num of covered location is 32
+Method {|intkey.TreeMap$Entry.consistency()Z|}: Total num of branches is 8 covered is 8 branch coverage is 1.0 Total num of location is 29 num of covered location is 29

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <constructor maxExecTime="500" skip="false"/>
+    <constructor maxExecTime="500" skip="true">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="float"/>
+    </constructor>
+    <constructor maxExecTime="500" skip="true">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </constructor>
+    <constructor maxExecTime="500" skip="false">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.util.Map"/>
+    </constructor>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="clear"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="clone"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="containsKey">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="containsValue">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="entrySet"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="equals">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="get">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="hashCode"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="isEmpty"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="keySet"/>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="put">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="java.lang.Object"/>
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="putAll">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="java.util.Map"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="remove">
+        <parameter exchangeStateWith="" exposedByReturn="true" captured="true" mutated="true" type="java.lang.Object"/>
+    </method>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="size"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="toString"/>
+    <method kind="skip" exposeState="false" maxExecTime="500" name="values"/>
+</ns2:class>

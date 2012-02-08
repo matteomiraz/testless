@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://testful.sourceforge.net/schema/2.0/behavioral.xsd" >
+    <constructor maxExecTime="500" skip="false" />
+
+    <method kind="observer" exposeState="false" maxExecTime="500" name="findMax" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="findMin" />
+    <method kind="observer" exposeState="false" maxExecTime="500" name="isEmpty" />
+    
+    <method kind="pure" exposeState="false" maxExecTime="500" name="find">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+    </method>
+    <method kind="pure" exposeState="false" maxExecTime="500" name="printTree" />
+    
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="insert">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+	        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.findMin(p0) == -1" />
+        </extra>
+    </method>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="makeEmpty" />
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="remove">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="false" mutated="false" type="int"/>
+        <extra xsi:type="ns4:behavior">
+	        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.findMin(p0) == -1" />
+        </extra>
+    </method>
+    
+    <method kind="static" exposeState="false" maxExecTime="500" name="repOK">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="intkey.BinaryNode"/>
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="intkey.Range"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0.getElement()" parameters="p0.getLeft().getElement():p0.getRight().getElement():p1.getLower():p1.getUpper()" />
+		</extra>
+    </method>
+
+    <method kind="static" exposeState="false" maxExecTime="500" name="repOK">
+        <parameter exchangeStateWith="" exposedByReturn="false" captured="true" mutated="true" type="intkey.BinaryNode"/>
+		<extra xsi:type="ns4:behavior">
+			<abstraction function="testful.coverage.behavior.AbstractorNumber" expression="p0.getElement()" parameters="p0.getLeft().getElement():p0.getRight().getElement()" />
+		</extra>
+    </method>
+    
+    <extra xsi:type="ns4:behavior">
+        <abstraction function="testful.coverage.behavior.AbstractorBoolean" expression="this.isEmpty()" />
+        <abstraction function="testful.coverage.behavior.AbstractorNumber" expression="this.findMin()" parameters="this.findMax()" />
+    </extra>
+</ns2:class>

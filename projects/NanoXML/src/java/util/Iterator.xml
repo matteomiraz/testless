@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <method kind="pure" exposeState="false" maxExecTime="500" name="hasNext"/>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="next"/>
+    <method kind="mutator" exposeState="false" maxExecTime="500" name="remove"/>
+</ns2:class>

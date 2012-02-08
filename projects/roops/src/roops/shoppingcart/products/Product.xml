@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+	<cluster>
+		<class>roops.shoppingcart.products.BlackPen</class>
+		<class>roops.shoppingcart.products.RedPen</class>
+	</cluster>
+</ns2:class>

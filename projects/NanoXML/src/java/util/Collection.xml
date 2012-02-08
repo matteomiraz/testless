@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:class xmlns:ns2="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <method kind="skip" name="add">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="addAll">
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="clear"/>
+    <method kind="skip" name="contains">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="containsAll">
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="equals">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="hashCode"/>
+    <method kind="skip" name="isEmpty"/>
+    <method kind="skip" name="iterator"/>
+    <method kind="skip" name="remove">
+        <parameter type="java.lang.Object"/>
+    </method>
+    <method kind="skip" name="removeAll">
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="retainAll">
+        <parameter type="java.util.Collection"/>
+    </method>
+    <method kind="skip" name="size"/>
+    <method kind="skip" name="toArray"/>
+</ns2:class>
