@@ -169,7 +169,6 @@ org.jgrapht.experimental.PartiteRandomGraphGenerator
 org.jgrapht.experimental.GraphSquare
 org.jgrapht.experimental.GraphTests
 org.jgrapht.experimental.isomorphism.VertexDegreeEquivalenceComparator
-org.jgrapht.experimental.isomorphism.PermutationIsomorphismInspector
 org.jgrapht.experimental.isomorphism.EquivalenceIsomorphismInspector
 org.jgrapht.experimental.isomorphism.AbstractExhaustiveIsomorphismInspector$NextFunctor
 org.jgrapht.experimental.isomorphism.IsomorphismRelation
