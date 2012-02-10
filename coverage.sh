@@ -22,7 +22,7 @@ processClass() {
 	return 1
     fi
     
-    if [ ! -d $run/$class/tests ] || [ ! -f $run/$class/coverage.txt ];
+    if [ ! -d $run/$class/tests ];
     then
 	echo "  No tests in $class ($run)"
 	return 1
@@ -37,8 +37,7 @@ processClass() {
 	local COV=$BASE/support/coverage/$COV
 
 	bash $COV "check" "$project"; local CHECK=$?
- 	grep -q "tool:$cov" $run/$class/coverage.txt; local DONE=$?
- 	if [ $CHECK -eq 0 ] && [ $DONE -eq 1 ]
+ 	if [ $CHECK -eq 0 ] && [ ! -d $run/coverage/$cov/$class ]
 	then
 	    [ $h -eq 0 ] && echo "  $class" && h=1
 
@@ -53,10 +52,12 @@ processClass() {
 	    if [ $status -eq 0 ]
 	    then
 		echo "OK"
-		echo "tool:$cov" >> $run/$class/coverage.txt
 	    else
 		echo "ERROR"
 		bash $COV "recovery" "$project" "$run"
+
+		[ -d $run/coverage/$cov/$class-bad ] && rm -rf $run/coverage/$cov/$class-bad
+		mv $run/coverage/$cov/$class $run/coverage/$cov/$class-bad
 	    fi
 	fi
     done
@@ -122,9 +123,7 @@ processProject() {
     done
 }
 
-#for p in `ls results`;
-for p in NanoXML 
+for p in `ls results`;
 do
-
     processProject $p
 done

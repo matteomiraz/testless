@@ -53,7 +53,7 @@ do
 	    [ ! -d $newRun ] && mkdir -p $newRun
 
 	    ln -s ../../../../../$run $newRun/$class
-	    echo "dir:$newRun/$class" > $run/coverage.txt
+	    echo "$newRun/$class" > $run/coverage.txt
 
 	    echo "$run -> $newRun/$class"  
 	fi
