@@ -108,6 +108,13 @@ public class AsUndirectedGraph<V, E extends org.jgrapht.graph.DefaultEdge>
      */
     public Set<E> getAllEdges(V sourceVertex, V targetVertex)
     {
+    	if(sourceVertex == null){
+    		throw new NullPointerException("sourceVertex cannot be null");
+    	}
+    	if(targetVertex == null){
+    		throw new NullPointerException("targetVertex cannot be null");
+    	}
+    	
         Set<E> forwardList = super.getAllEdges(sourceVertex, targetVertex);
 
         if (sourceVertex.equals(targetVertex)) {

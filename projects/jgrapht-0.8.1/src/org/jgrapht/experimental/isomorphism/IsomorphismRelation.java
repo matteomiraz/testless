@@ -85,6 +85,17 @@ public class IsomorphismRelation<V, E extends org.jgrapht.graph.DefaultEdge>
         Graph<V, E> g1,
         Graph<V, E> g2)
     {
+    	//TESTFUL: NULL CHECK ADDED
+    	if(aGraph1vertexArray == null){
+    		throw new NullPointerException("aGraph1vertexArray cannot be null.");
+    	}
+    	if(aGraph2vertexArray == null){
+    		throw new NullPointerException("aGraph2vertexArray cannot be null.");
+    	}
+    	if(aGraph1vertexArray.size() != aGraph2vertexArray.size()){
+    		throw new NullPointerException("aGraph1vertexArray and aGraph2vertexArray must have the same dimension.");
+    	}
+    	
         this.vertexList1 = aGraph1vertexArray;
         this.vertexList2 = aGraph2vertexArray;
         this.graph1 = g1;

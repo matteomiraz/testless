@@ -407,6 +407,16 @@ public abstract class Graphs
      */
     public static <V, E extends org.jgrapht.graph.DefaultEdge> V getOppositeVertex(Graph<V, E> g, E e, V v)
     {
+    	if(g == null){
+    		throw new IllegalArgumentException("g cannot be null");
+    	}
+    	if(e == null){
+    		throw new IllegalArgumentException("e cannot be null");
+    	}
+    	if(v == null){
+    		throw new IllegalArgumentException("v cannot be null");
+    	}
+    	
         V source = g.getEdgeSource(e);
         V target = g.getEdgeTarget(e);
         if (v.equals(source)) {
@@ -427,6 +437,9 @@ public abstract class Graphs
      */
     public static <V, E extends org.jgrapht.graph.DefaultEdge> List<V> getPathVertexList(GraphPath<V, E> path)
     {
+    	if(path == null){
+    		throw new IllegalArgumentException("path cannot be null");
+    	}
         Graph<V, E> g = path.getGraph();
         List<V> list = new ArrayList<V>();
         V v = path.getStartVertex();

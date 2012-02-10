@@ -308,7 +308,7 @@ public class CompoundPermutationIter
         throw new UnsupportedOperationException();
     }
 
-    public CompoundPermutationIter(tful.arrays.intArray p0)  { this(p0.toArray() ); }
+    public CompoundPermutationIter(tful.arrays.intArray p0)  { this(p0==null?null:p0.toArray() ); }
     public tful.arrays.intArray testful_nextPermutation()  { return new tful.arrays.intArray(nextPermutation( ));}
     public tful.arrays.intArray testful_getNext()  { return new tful.arrays.intArray(getNext( ));}
     public tful.arrays.intArray testful_getPermAsArray()  { return new tful.arrays.intArray(getPermAsArray( ));}

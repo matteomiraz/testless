@@ -180,7 +180,7 @@ public class PartiteRandomGraphGenerator<V, E extends org.jgrapht.graph.DefaultE
         }
     }
 
-    public PartiteRandomGraphGenerator(tful.arrays.intArray p0, int p1, long p2) throws java.lang.IllegalArgumentException { this(p0.toArray() , p1, p2); }
+    public PartiteRandomGraphGenerator(tful.arrays.intArray p0, int p1, long p2) throws java.lang.IllegalArgumentException { this(p0==null?null:p0.toArray() , p1, p2); }
 
    }
 

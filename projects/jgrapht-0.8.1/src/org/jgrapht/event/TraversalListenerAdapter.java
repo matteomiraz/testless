@@ -61,6 +61,7 @@ public class TraversalListenerAdapter<V, E extends DefaultEdge>
     public void connectedComponentFinished(
         ConnectedComponentTraversalEvent e)
     {
+    	System.out.println("TraversalListenerAdapter.connectedComponentFinished");
     }
 
     /**
@@ -68,6 +69,7 @@ public class TraversalListenerAdapter<V, E extends DefaultEdge>
      */
     public void connectedComponentStarted(ConnectedComponentTraversalEvent e)
     {
+    	System.out.println("TraversalListenerAdapter.connectedComponentStarted");
     }
 
     /**
@@ -75,6 +77,7 @@ public class TraversalListenerAdapter<V, E extends DefaultEdge>
      */
     public void edgeTraversed(EdgeTraversalEvent<V, E> e)
     {
+    	System.out.println("TraversalListenerAdapter.edgeTraversed");
     }
 
     /**
@@ -82,6 +85,7 @@ public class TraversalListenerAdapter<V, E extends DefaultEdge>
      */
     public void vertexTraversed(VertexTraversalEvent<V> e)
     {
+    	System.out.println("TraversalListenerAdapter.vertexTraversed");
     }
 
     /**
@@ -89,6 +93,7 @@ public class TraversalListenerAdapter<V, E extends DefaultEdge>
      */
     public void vertexFinished(VertexTraversalEvent<V> e)
     {
+    	System.out.println("TraversalListenerAdapter.vertexFinished");
     }
 }
 

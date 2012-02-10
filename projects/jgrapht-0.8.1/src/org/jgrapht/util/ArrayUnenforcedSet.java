@@ -118,7 +118,7 @@ public class ArrayUnenforcedSet<E>
 
 
     public tful.arrays.ObjectArray testful_toArray()  { return new tful.arrays.ObjectArray(toArray( ));}
-    public tful.arrays.ObjectArray testful_toArray(tful.arrays.ObjectArray p0)  { return new tful.arrays.ObjectArray(toArray( p0.toArray() ));}
+    public tful.arrays.ObjectArray testful_toArray(tful.arrays.ObjectArray p0)  { return new tful.arrays.ObjectArray(toArray( p0==null?null:p0.toArray() ));}
 }
 
 // End ArrayUnenforcedSet.java

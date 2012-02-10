@@ -95,8 +95,8 @@ public class PermutationFactory
     }
 
 
-    public static org.jgrapht.experimental.permutation.ArrayPermutationsIter testful_createRegular(tful.arrays.intArray p0)  { return createRegular( p0.toArray() );}
-    public static org.jgrapht.experimental.permutation.ArrayPermutationsIter testful_createByGroups(tful.arrays.intArray p0)  { return createByGroups( p0.toArray() );}
+    public static org.jgrapht.experimental.permutation.ArrayPermutationsIter testful_createRegular(tful.arrays.intArray p0)  { return createRegular( p0==null?null:p0.toArray() );}
+    public static org.jgrapht.experimental.permutation.ArrayPermutationsIter testful_createByGroups(tful.arrays.intArray p0)  { return createByGroups( p0==null?null:p0.toArray() );}
 }
 
 // End PermutationFactory.java

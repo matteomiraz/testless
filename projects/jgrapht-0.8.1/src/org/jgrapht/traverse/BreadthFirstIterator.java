@@ -116,6 +116,7 @@ public class BreadthFirstIterator<V, E extends org.jgrapht.graph.DefaultEdge>
      */
     protected void encounterVertexAgain(V vertex, E edge)
     {
+    	System.out.println("encounterVertexAgain");
     }
 
     /**
